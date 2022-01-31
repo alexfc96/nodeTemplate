@@ -1,0 +1,29 @@
+@api = http://localhost:3000/tasks
+
+GET {{api}}
+
+################################
+GET {{api}}/1
+
+################################
+POST {{api}}
+Content-Type: application/json
+
+{
+    "title": "task3",
+    "description": "task3"
+}
+
+################################
+
+PUT {{api}}/61f869deced66ee701bbab1c
+Content-Type: application/json
+
+{
+    "title": "taskUpdated",
+    "description": "taskModified"
+}
+
+################################
+
+DELETE {{api}}/61f866208255452e5fb3bccb
